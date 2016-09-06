@@ -1,0 +1,163 @@
+/* font-family: "LatoRegular"; */
+@font-face {
+    font-family: "LatoRegular";
+    src: url("../fonts/LatoRegular/LatoRegular.eot");
+    src: url("../fonts/LatoRegular/LatoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/LatoRegular/LatoRegular.woff") format("woff"),
+    url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "LatoBold"; */
+@font-face {
+    font-family: "LatoBold";
+    src: url("../fonts/LatoBold/LatoBold.eot");
+    src: url("../fonts/LatoBold/LatoBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/LatoBold/LatoBold.woff") format("woff"),
+    url("../fonts/LatoBold/LatoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "LatoItalic"; */
+@font-face {
+    font-family: "LatoItalic";
+    src: url("../fonts/LatoItalic/LatoItalic.eot");
+    src: url("../fonts/LatoItalic/LatoItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/LatoItalic/LatoItalic.woff") format("woff"),
+    url("../fonts/LatoItalic/LatoItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "LatoLight"; */
+@font-face {
+    font-family: "LatoLight";
+    src: url("../fonts/LatoLight/LatoLight.eot");
+    src: url("../fonts/LatoLight/LatoLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/LatoLight/LatoLight.woff") format("woff"),
+    url("../fonts/LatoLight/LatoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "LatoBoldItalic"; */
+@font-face {
+    font-family: "LatoBoldItalic";
+    src: url("../fonts/LatoBoldItalic/LatoBoldItalic.eot");
+    src: url("../fonts/LatoBoldItalic/LatoBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/LatoBoldItalic/LatoBoldItalic.woff") format("woff"),
+    url("../fonts/LatoBoldItalic/LatoBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "LatoLightItalic"; */
+@font-face {
+    font-family: "LatoLightItalic";
+    src: url("../fonts/LatoLightItalic/LatoLightItalic.eot");
+    src: url("../fonts/LatoLightItalic/LatoLightItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/LatoLightItalic/LatoLightItalic.woff") format("woff"),
+    url("../fonts/LatoLightItalic/LatoLightItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BebasRegular"; */
+@font-face {
+    font-family: "BebasRegular";
+    src: url("../fonts/BebasRegular/BebasRegular.eot");
+    src: url("../fonts/BebasRegular/BebasRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/BebasRegular/BebasRegular.woff") format("woff"),
+    url("../fonts/BebasRegular/BebasRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BebasBook"; */
+@font-face {
+    font-family: "BebasBook";
+    src: url("../fonts/BebasBook/BebasBook.eot");
+    src: url("../fonts/BebasBook/BebasBook.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/BebasBook/BebasBook.woff") format("woff"),
+    url("../fonts/BebasBook/BebasBook.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BebasBold"; */
+@font-face {
+    font-family: "BebasBold";
+    src: url("../fonts/BebasBold/BebasBold.eot");
+    src: url("../fonts/BebasBold/BebasBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/BebasBold/BebasBold.woff") format("woff"),
+    url("../fonts/BebasBold/BebasBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BebasLight"; */
+@font-face {
+    font-family: "BebasLight";
+    src: url("../fonts/BebasLight/BebasLight.eot");
+    src: url("../fonts/BebasLight/BebasLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/BebasLight/BebasLight.woff") format("woff"),
+    url("../fonts/BebasLight/BebasLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BebasThin"; */
+@font-face {
+    font-family: "BebasThin";
+    src: url("../fonts/BebasThin/BebasThin.eot");
+    src: url("../fonts/BebasThin/BebasThin.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/BebasThin/BebasThin.woff") format("woff"),
+    url("../fonts/BebasThin/BebasThin.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "PTSansRegular"; */
+@font-face {
+    font-family: "PTSansRegular";
+    src: url("../fonts/PTSansRegular/PTSansRegular.eot");
+    src: url("../fonts/PTSansRegular/PTSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PTSansRegular/PTSansRegular.woff") format("woff"),
+    url("../fonts/PTSansRegular/PTSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "PTSansItalic"; */
+@font-face {
+    font-family: "PTSansItalic";
+    src: url("../fonts/PTSansItalic/PTSansItalic.eot");
+    src: url("../fonts/PTSansItalic/PTSansItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PTSansItalic/PTSansItalic.woff") format("woff"),
+    url("../fonts/PTSansItalic/PTSansItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "PTSansBold"; */
+@font-face {
+    font-family: "PTSansBold";
+    src: url("../fonts/PTSansBold/PTSansBold.eot");
+    src: url("../fonts/PTSansBold/PTSansBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PTSansBold/PTSansBold.woff") format("woff"),
+    url("../fonts/PTSansBold/PTSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family:"Equable";
+    src:url("../fonts/Equable/Equable.otf");
+}
+@font-face {
+    font-family:"MullerNarrowExtraBold";
+    src:url("../fonts/Muller/MullerNarrow-ExtraBold.otf");
+}
+@font-face {
+    font-family:"MullerNarrowLight";
+    src:url("../fonts/Muller/MullerNarrowLight.otf");
+}
+
+/* text-based popup styling */
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 25px;
+  width: auto;
+  max-width: 400px;
+  margin: 0 auto;
+}
+

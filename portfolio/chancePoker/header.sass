@@ -1,0 +1,1168 @@
+@import "bourbon"
+@import "sass/vars"
+@import "sass/base"
+
+//First screen styles
+
+body
+	background-color: #f4f4f4
+.main__header
+	height: em(70)
+	min-height: 100%
+	display: flex
+	padding: 0 em(40)
+	align-items: center
+	position: relative
+	justify-content: space-between
+	box-shadow: 0 0px 25px 0 rgba(0,0,0,.2)
+
+
+.header__logo-img
+	width: em(150)
+	height: auto
+	display: inline
+
+.header__logo-link
+	font-family: "OpenSansBold"
+	text-transform: uppercase
+	color: #212121
+	text-transform: uppercase
+
+.header__wrap-nav
+	display: flex
+
+.nav__link
+	font-family: "RobotoBold"
+	text-transform: uppercase
+	font-weight: 500
+	font-size: 14px
+	color: #202326
+	text-decoration: none
+	transition: .3s linear all
+	&:hover, &:focus, &:active
+		text-decoration: none
+		color: #e64c3c
+
+.nav__list
+	margin-left: em(25)
+
+.nav__socail-link
+	
+	cursor: pointer
+	svg
+		width: 25px
+		height: 25px
+		transition: .3s all linear
+		&:hover
+			fill: #e64c3c
+
+.header__nav-wrap
+	display: flex
+
+.link__border
+	position: relative
+	padding-right: 15px
+	margin-left: em(25)
+	&::after
+		position: absolute
+		content: ''
+		display: block
+		top: 5px
+		right: 0
+		width: 1px
+		height: 15px
+		background-color: rgba(0, 0, 0, 0.15)
+
+.nav__social
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+.last__border
+	margin-left: em(15)
+
+.header__bottom-wrap
+	width: 100%
+	height: 3.5em
+	position: absolute
+	display: flex
+	align-items: center
+	left: 0
+	transform: translateY(-10px)
+	transition: .3s all linear
+	opacity: 0
+	visibility: hidden
+	background-color: rgb(32, 35, 38)
+	&.activeSearch
+		opacity: 1
+		visibility: visible
+		transform: translateY(0)
+
+.search__header-inner
+	display: flex
+	justify-content: space-between
+	align-items: center
+	h3
+		font-family: "OpenSansExtraBold"
+		color: #fff
+		font-size: 2em
+	input
+		width: 60%
+		height: 34px
+		border: none
+		transition: .3s all linear
+		outline: 13px solid transparent
+		text-transform: uppercase
+		color: #202326
+		font-family: "RobotoBold"
+		padding-left: .6em
+		font-size: 1.3em
+		&:focus
+			outline: 13px solid rgb(230, 76, 60)
+	button
+		outline: none
+		border: none
+		width: em(55)
+		height: em(55)
+		background-color: transparent
+		cursor: pointer
+		transition: .3s linear all
+		svg
+			transition: .3s linear all
+		svg:hover
+			fill: rgb(230, 76, 60)
+
+.header__close-wrap
+	position: relative
+	padding-right: 15px
+	display: none
+	&::after
+		position: absolute
+		content: ''
+		display: block
+		top: 5px
+		right: 0
+		width: 1px
+		height: 15px
+		background-color: rgba(0, 0, 0, 0.15)
+	svg
+		width: 25px
+		height: 25px
+		transition: .3s linear all
+		cursor: pointer
+	svg:hover
+		fill: rgb(230, 76, 60)
+
+.side__menu-wrapper
+	width: 100%
+	height: 100%
+	display: none
+	position: fixed
+	left: 0
+	display: flex
+	align-items: center
+	justify-content: center
+	top: 0
+	background-color: rgba(0,0,0,.95)
+	box-shadow: 0 0px 25px 0 rgba(0,0,0,.2)
+
+.side__menu
+	display: none
+
+.side__link
+	font-family: "RobotoBold"
+	text-transform: uppercase
+	font-weight: 500
+	font-size: 2em
+	color: #fff
+	text-decoration: none
+	padding: 5px 0
+	transition: .3s linear all
+	display: block
+	&:hover, &:focus, &:active
+		text-decoration: none
+		color: #e64c3c
+
+.side__ul
+	text-align: center
+
+.side__menu-close
+	position: absolute
+	top: 0
+	right: 0
+	width: 100%
+	text-align: right
+	margin: 30px 30px 0 0
+	z-index: 1
+	svg
+		width: em(40)
+		height: em(40)
+		cursor: pointer
+		transition: .3s linear all
+		&:hover
+			fill: #e64c3c
+
+.header__logo-link
+	img
+		display: block
+		width: em(145)
+		height: em(55)
+
+
+// First page
+
+.first__page
+	width: 100%
+	height: 500px
+.first__wrap
+	display: flex
+	h1
+		font-family: "RobotoBold"
+		color: #fff
+		text-transform: uppercase
+		font-size: 4.5em
+		text-shadow: 0 2px 22px rgba(0,0,0,.5)
+	p
+		font-family: "OpenSansRegular"
+		font-size: em(28)
+		color: #fff
+		line-height: 1.2
+		text-shadow: 0 2px 22px rgba(0,0,0,.5)
+		width: 40%
+		margin-bottom: 30px
+	.first__buttun
+		.first__button-btn
+			background-color: #e64c3c
+			transition: .3s all linear
+			font-family: "RobotoMedium"
+			border: none
+			outline: none
+			color: #fff
+			width: em(200)
+			height: 55px
+			font-family: "RobotoBold"
+			text-transform: uppercase
+			font-size: 1.1em
+			border-radius: 5px
+			border-bottom: 3px solid #c03a2b
+			cursor: pointer
+			&:hover
+				background-color: #c03a2b
+				border-bottom: 3px solid #c03a2b
+
+.first__wrap
+	display: flex
+	flex-direction: column
+	justify-content: center
+
+.recommended__header
+	padding: em(30) 0
+	border-bottom: 1px solid rgba(32, 35, 38, 0.35)
+	h4 
+		font-family: "RobotoBold"
+		color: #202326
+		text-transform: uppercase
+		font-size: 1.1em
+		margin: 0
+		padding: 0
+		line-height: 1	
+
+.newFire
+	width: 20px
+	height: 20px
+	display: none
+	vertical-align: sub
+
+
+.rec_input
+	display: none
+
+.rec__label
+	cursor: pointer
+	transition: .3s all linear
+	&:hover
+		color: #e64c3c
+
+.rec_input:checked + .regFire
+	fill: #202326
+
+
+
+.rec_input:checked + .regFire
+	display: inline-block
+	fill: #e64c3c
+
+svg.regFire
+	vertical-align: sub
+
+.flexbox__rec
+	display: flex
+	align-items: baseline
+	justify-content: space-between
+
+.recommended-fig
+	position: relative
+	width: 100%
+	height: 400px
+
+.rec__absolute-img
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	img
+		display: block
+		width: 100%
+		height: auto
+
+
+.rec__item
+	height: 400px
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	figcaption
+		background-color: rgba(0,0,0,0.25)
+		width: 100%
+		height: 100%
+		position: relative
+		transition: .3s linear all
+		cursor: pointer
+
+.rec__item-tag
+	position: absolute
+	top: 0
+	left: 0
+	margin: 15px 0 0px 15px
+	span 
+		font-family: "RobotoBold"
+		color: #fff
+		font-size: .9em
+		text-transform: uppercase
+		display: inline-block
+		padding: 2px 6px
+		border-radius: 6px
+		box-shadow: 0 0 25px 0 rgba(0,0,0,.2)
+
+/* Color's tag */
+.greentag
+	background-color: #4caf50
+.redtag
+	background-color: #e53935
+
+.rec__figcaption-wrap
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	height: 100%
+	width: 100%	
+	box-shadow: 0 0 25px 0 rgba(0,0,0,.23)
+	
+
+.rec__figcaption-wrap h3 a
+	font-family: "RobotoBold"
+	font-size: 2em
+	color: #fff
+	line-height: 1.1
+	text-decoration: none
+	display: block
+	padding-left: 15px
+	&:hover, &:focus, &:active 
+		text-decoration: none
+		color: #fafafa
+
+.rec__figcaption-wrap p a 
+	font-family: "RobotoRegular"
+	font-size: 1.1em
+	color: #fff
+	text-decoration: none
+	display: block
+	width: 90%
+	line-height: 1.3
+	padding-left: 15px
+	&:hover, &:focus, &:active 
+		text-decoration: none
+		color: #fafafa
+
+.rec__item:hover figcaption
+	background-color: rgba(0,0,0,0.10)
+
+.like__icon
+	transition: .3s all linear
+	&:hover
+		fill:#e64c3c
+
+.like__icon
+	width: 20px
+	height: 20px
+	fill: #000
+	transition: .3s all linear
+
+.comment__uni-item svg
+	width: em(20)
+	height: em(20)
+	margin-right: 4px
+	transition: .3s all linear
+	&:hover 
+		fill: #e64c3c
+
+.comment__uni-item
+	span 
+		font-family: "RobotoLight"
+		color: #ffffff
+
+.comment__uni
+	display: flex
+	margin-left: 15px
+	margin-top: 20px
+	margin-bottom: 15px
+
+.comment__uni-item
+	margin-right: em(10)
+	display: flex
+	align-items: center
+
+.recommended__figure-wrap
+	margin-top: 15px
+
+.header.recommended__header.container
+	padding: 1.2em 0
+
+.recommended__header
+	padding: 1.4em 0
+
+.side__menu-wrapper
+	z-index: 1000
+
+.side__menu-close
+	z-index: 2000
+
+.new__header-wrap h3
+	font-family: RobotoBold
+	font-size: 1.1em
+	text-transform: uppercase
+	color: #202326
+	margin: 0
+	padding: 0
+	line-height: 1
+
+.new__header-wrap
+	background-color: #FFF
+	padding: 1.4em 0
+	
+
+.new__header
+	border-top: 1px solid rgba(32,35,38,.35)
+	border-bottom: 1px solid rgba(32,35,38,.35)
+
+.new__section-container
+	padding-top: 15px
+
+.rec__item__container
+	margin-bottom: 15px
+	overflow: hidden
+
+.rec__item
+	margin-bottom: 15px
+
+.landing__img-wrap
+	text-align: center
+	img
+		width: 120px
+		height: 120px
+
+.landing__item figcaption
+	text-align: center
+	h4
+		font-family: "RobotoBold"
+		color: #202326
+		font-size: 2.2em
+		text-transform: uppercase
+		margin: 0
+		padding: 0
+	p 
+		color: #202326
+		font-size: 1.1em
+		font-family: "OpenSansRegular"
+		line-height: 1.33
+
+
+.landing__blog
+	background-color: #f4f4f4
+
+.landing__item
+	background-color: #FFF
+	padding-top: 15px
+	margin-top: 15px
+	padding-bottom: 15px
+	margin-bottom: 15px
+	min-height: 265px
+	box-shadow: 0 5px 20px 0 rgba(0,0,0,.23)
+
+.rec__figcaption-wrap
+	box-shadow: 0 5px 20px 0 rgba(0,0,0,.23)
+
+.landing__title
+	background-color: #fff
+	padding: 1.4em 0
+	text-align: center
+	padding-top: 20px
+	margin-top: 15px
+	box-shadow: 0 5px 20px 0 rgba(0,0,0,.23)
+	h4
+		font-family: "RobotoBold"
+		color: #202326
+		font-size: 1.2em
+		text-transform: uppercase
+
+.landing__mail
+	width: 100%
+	height: auto
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 240px
+	background-size: cover
+
+.landing__center-wrap
+	text-align: center
+	background-color: #FFF
+	box-shadow: 0 5px 20px 0 rgba(0,0,0,.23)
+
+.landing__input-wrap
+	padding: 15px 0
+	input 
+		width: 60%
+		height: 40px
+		color: #202326
+		font-size: 1.1em
+		text-transform: uppercase
+		font-family: "OpenSansBold"
+		padding-left: .5em
+		outline: 5px solid transparent
+		transition: .3s all linear
+		&:focus 
+			outline: 17px solid #202326
+	button 
+		text-transform: uppercase
+		font-family: "OpenSansExtraBold"
+		font-size: 1.2em
+		margin-left: 29px
+		color: #202326
+		background-color: transparent
+		transition: .3s linear all
+		display: inline-block
+		&:hover 
+			background-color: #202326
+			color: #fff
+			outline: 19px solid #202326
+		border: none
+		outline: none
+
+h1 
+	margin: 0
+
+
+.footer__container
+	min-height: 240px
+	background-color: #000
+
+
+.header__footer
+	display: flex
+	align-items: center
+	justify-content: space-between
+	height: 100%
+	margin-top: 93px
+	padding: 10px 0
+	background-color: rgba(0, 0, 0, 0.71)
+
+
+
+.header__footer-menu > .header__wrap-nav > .nav__list > a 
+	color: #fafafa
+
+.news__sec-header
+	position: relative
+
+.news__header-item
+	position: relative
+	padding: 10px 15px
+	cursor: pointer
+	margin-top: 10px
+	transition: .25 all linear
+	&:hover 
+		background-color: #f4f4f4
+
+
+
+.news__header-item > svg
+	width: 30px
+	height: 30px
+	transition: .25s all linear
+	&:hover 
+		fill: #e64c3c
+
+.news__header-item > svg:hover + .news__header-img
+	background-color: #202326
+
+
+.news__header-img
+	position: absolute
+	top: 0
+	right: 0
+	color: #fff
+	border-radius: 100%
+	background-color: #e64c3c
+	padding: 0px 8px
+	font-family: "OpenSansBold"
+	transition: .25s linear all
+
+
+.news__header-ul
+	display: flex
+	justify-content: center
+
+.news__header-dropdown
+	position: absolute
+	top: 56px
+	background-color: #FFF
+	left: 0
+	padding: 15px 10px
+	transition: .3s all linear
+	transform: translateY(20px)
+	visibility: hidden
+	opacity: 0
+	box-shadow: 0 5px 20px 0 rgba(0,0,0,.8)
+	h5 
+		margin: 0
+		text-align: center
+		padding: 0 0 5px 0
+		font-size: .9em
+		color: #202326
+		text-transform: uppercase
+		font-family: "OpenSansExtraBold"
+
+.news__header-dropdown_itemAvatar
+	img 
+		width: 80px
+		height: 60px
+
+.news__header-dropdown_itemTitle
+	display: flex
+	width: 350px
+
+.news__header-dropdown_itemText
+	font-family: "RobotoRegular"
+	line-height: 1.3
+	padding-top: 4px
+	span 
+		font-weight: 800
+
+.news__header-item:hover .news__header-dropdown
+	visibility: visible
+	opacity: 1
+	transform: translateY(0px)
+
+.news__header-dropdown_item:not(:last-child)
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08)
+
+.news__header-dropdown_item
+	margin-top: 5px
+
+.news__header
+	box-shadow: 0 5px 20px 0 rgba(0,0,0,.25)
+
+.news__block-case
+	background-color: #FFF
+
+.news__title
+	margin: 0
+	padding: 0 0 0 20px
+	font-size: 4.5em
+	font-family: "RobotoBold"
+	color: #202326
+
+.news__block-case_link
+	
+	&:hover, &:focus, &:active 
+		text-decoration: none
+	h3 
+		font-size: 3em
+		font-family: "RobotoBold"
+		text-decoration: none
+		color: #202326
+		padding: 10px 0 10px 0
+	p
+		text-decoration: none
+		color: #4a4f54
+		font-family: "OpenSansBold"
+		font-style: italic
+		padding-bottom: 20px
+
+
+.news__block-case_img
+	height: 400px
+	background-position: center
+	background-size: cover
+	position: relative
+
+.news__block-case_item
+	margin-bottom: 30px
+
+.eye__img-block
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, 0)
+	transition: .25s all linear
+	display: flex 
+	align-items: center
+	justify-content: center
+	&:hover 
+		background-color: rgba(0, 0, 0, .75)
+
+.eye__img-cas
+	opacity: 0
+	visibility: hidden
+	transition: .3s all linear 
+	transform: translateY(30px)
+	svg 
+		width: 120px
+		height: 120px
+
+.eye__img-block:hover > .eye__img-cas
+	opacity: 1
+	visibility: visible
+	transform: translateY(0px)
+
+.news__block-case_item
+	padding: 10px 10px 30px 10px
+	box-shadow: 0 5px 20px 0 rgba(0,0,0,.25)
+
+.news__top-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	button
+		background-color: #8BC34A
+		border: none 
+		outline: none
+		text-transform: uppercase
+		font-family: "RobotoBold"
+		font-size: .9em
+		color: #fff
+		border-radius: 3px
+		transition: .25s all linear 
+		&:hover 
+			background-color: #93ce50
+		width: 200px
+		height: 50px	
+		margin-right: 20px
+		border-bottom: 3px solid #7bab44
+
+.add__news-wrap
+	width: 100%	
+
+.add__news-form h4
+	width: 100%
+	text-align: center
+	color: #202326
+	font-family: "OpenSansExtraBold"
+	text-transform: uppercase
+	padding: 0
+	margin: 10px 0
+	text-decoration: underline
+
+.add__news-form
+	text-align: center
+
+
+.add__news-case
+	background-color: #FFF
+	padding: 10px 10px 20px
+	box-shadow: 0 5px 20px 0 rgba(0,0,0,.25)
+	margin-bottom: 15px
+
+.add__news-theme
+	font-family: "OpenSansBold"
+	text-transform: uppercase
+	font-size: 1em
+	color: #202326
+	margin-bottom: 5px
+	label span
+		cursor: pointer
+		width: 100%
+		display: block
+		padding: 5px 0
+	label input 
+		width: 70%
+		height: 35px
+		padding-left: 5px
+		border: 1px solid rgba(32, 35, 38, 0.22)
+		outline: none
+		transition: .25s all linear
+		&:focus 
+			box-shadow: 0 5px 20px 0 rgba(0,0,0,.25)	
+	textarea 
+		width: 70%
+		min-height: 100px
+		border: 1px solid rgba(32, 35, 38, 0.22)
+		&:focus 
+			box-shadow: 0 5px 20px 0 rgba(0,0,0,.25)
+
+
+.add__new-txtarea
+	border: 1px solid #202326
+	padding-left: 5px
+	outline: none
+
+.add__news-button
+	text-align: center
+
+.add__news-button-add
+	width: 150px
+	height: 40px
+	background-color: #8BC34A
+	outline: none
+	color: #fff
+	border: none
+	font-size: 1.1em
+	text-transform: uppercase
+	font-family: "RobotoBold"
+	border-bottom: 2px solid #7eaf48
+	border-radius: 3px
+
+.add__news-button-clear
+	width: 150px
+	height: 40px
+	background-color: #F44336
+	outline: none
+	color: #fff
+	border: none
+	font-size: 1.1em
+	text-transform: uppercase
+	font-family: "RobotoBold"
+	border-bottom: 2px solid #c5392f
+	border-radius: 3px
+
+.add__news-button
+	margin: 30px 0 0 0
+
+.add__news-wrap
+	display: none	
+
+.news__tags-wrap
+	padding: 20px 0
+
+a.news__tags-item
+	background-color: #202326
+	color: #fff
+	padding: 2px 10px
+	text-transform: uppercase
+	font-size: 1.5em
+	margin-bottom: 10px
+	display: inline-block
+	font-family: "OpenSansSemiBoldItalic"
+	border-radius: 16px
+	border-bottom: 4px solid #131415
+	transition: .3s all linear
+	&:hover
+		background-color: #131415
+
+
+// Gate container
+
+.gate__container
+	padding: 40px 0 40px 0
+	text-align: center
+	background-color: #fff
+	margin-bottom: 15px
+	box-shadow: 0 0 25px 0 rgba(0,0,0,.2)
+	a 
+		color: #202326
+		transition: .25s all linear
+		font-family: "OpenSansBold"
+		text-transform: uppercase
+		padding-left: 5px
+		&:hover, &:focus, &:active
+			text-decoration: none
+			color: #e64c3c
+	a.activeTab
+		border-bottom: 3px solid #e64c3c
+
+.gate__item
+	width: 100%	
+	height: 450px
+	cursor: pointer
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	box-shadow: 0 5px 20px 0 rgba(0,0,0,.25)
+	background-color: #fff
+	margin-bottom: 15px
+
+.gate__item-case
+	width: 100%
+	height: 100%
+	display: flex
+	align-items: flex-end
+	background-color: rgba(0,0,0,.5)
+	transition: .3s all linear
+	padding: 0 10px 40px 10px
+	&:hover 
+		background-color: rgba(0,0,0,.2)
+
+.gate__item-footer
+	h5 
+		font-size: .9em
+		text-transform: uppercase
+		color: #fff
+		display: inline-block
+		background-color: #673AB7
+		border-radius: 6px
+		font-family: "RobotoBold"
+		font-weight: 700
+		padding: 2px 5px
+		margin-bottom: 3px
+
+	h4 
+		font-size: 1.5em
+		text-transform: uppercase
+		color: #fff
+		font-family: "RobotoBold"
+		font-weight: 700
+		line-height: 1.3
+		margin-bottom: 10px
+	p	
+		font-size: .8em
+		text-transform: uppercase
+		color: #fff
+		font-family: "RobotoLight"
+		font-weight: 700
+
+.gate__eye
+	display: flex 
+	transition: .25s linear all
+	transform: translateY(10px)
+	align-items: center
+	opacity: 0
+	visibility: hidden
+	margin-top: 10px
+	svg 
+		width: 30px
+		height: 30px
+		margin-right: 8px
+	span 
+		font-size: .9em
+		color: #fff
+		font-family: "OpenSansBoldItalic"
+
+.gate__item-case:hover footer .gate__eye
+	transform: translateY(0px)
+	opacity: 1
+	visibility: visible
+
+.gate__item
+	height: 350px
+
+.gate__item-footer h4
+	font-size: 1.2em
+
+.gate__container a
+	font-size: .9em
+
+
+.gate__footer 
+	height: 200px
+	width: 100%
+	display: flex 
+	justify-content: center
+	align-items: center
+	button 
+		width: 200px
+		height: 45px
+		background-color: #202326
+		border: none
+		border-bottom: 5px solid #141517
+		text-transform: uppercase
+		color: #fff
+		border-radius: 6px
+		font-family: "RobotoBold"
+		transition: .3s all linear
+		outline: none
+		&:hover 
+			transform: translateY(5px)
+			border-bottom: 5px solid transparent
+
+.module__user
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 1500
+	height: 100vh
+	cursor: pointer
+	display: none
+	
+	background-color: rgba(10, 10, 10, 0.98)
+
+.inner__module
+	justify-content: center
+	align-items: center
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	height: 100%
+
+.module__user-container
+	width: 30%
+	text-align: center
+	padding: 0 5%
+	z-index: 1600
+	h4 
+		font-size: 3em
+		text-transform: uppercase
+		font-family: "RobotoBold"
+		color: #fff
+
+.module__usel-label
+	display: block
+	text-align: left
+	text-transform: uppercase
+	color: #fff
+	font-size: .8em
+	font-family: "OpenSansBold"
+	margin-bottom: 3px
+
+
+.user__form input 
+	display: block
+	padding-left: 5px
+	width: 100%
+	height: 40px
+	font-family: "OpenSansExtraBold"
+	color: #202326
+	font-size: 1.3em
+	transition: .3s all linear
+	outline: none
+	border: none
+	margin-bottom: 15px
+	border-bottom: 5px solid transparent
+	&:focus 
+		border-bottom: 5px solid #202326
+
+.user__form button 
+	text-transform: uppercase
+	font-family: "OpenSansExtraBold"
+	color: #fff
+	outline: none
+	border: none
+	background-color: transparent
+	width: 45%
+	font-size: 1.2em
+	transition: .25s all linear
+	border-radius: 4px 
+	&:hover 
+		background-color: #FFF
+		color: #000
+
+.social__module-btn
+	a 
+		text-decoration: none
+		&:hover 
+			text-decoration: none
+
+.pay__case
+	box-shadow: 0 5px 20px 0 rgba(0,0,0,.25)
+
+.pat__title
+	text-transform: uppercase
+	color: #fff
+	font-size: 7em
+	padding-left: 15px
+	font-family: "OpenSansExtraBoldItalic"
+
+.pay__form
+	text-align: center
+	margin: 20px 0
+
+.pay__form-label
+	span
+		display: block
+		padding-bottom: 15px
+	input 
+		display: block
+		width: 30% 
+		margin: 0 auto
+
+.news__header
+	position: relative
+
+.pat__title
+	text-shadow: 0 2px 22px rgba(0,0,0,.5)
+
+.pay__first-case
+	display: flex 
+	align-items: center
+	justify-content: space-between
+	background-color: #e64c3c
+
+.social__pay-gate
+	padding-right: 15px
+
+	font-size: 2em
+	font-family: "OpenSansExtraBoldItalic"
+	text-transform: uppercase
+	color: #fafafa
+	text-shadow: 0 2px 22px rgba(0,0,0,.3)
+
+.pay__case-title
+	text-align: center
+	padding: 10px 0
+	text-transform: uppercase
+	color: #202326
+	font-family: "RobotoBold"
+
+.pay__item 
+	background-size: cover
+	display: flex 
+	align-items: flex-end
+	margin-top: 15px
+	margin-bottom: 15px
+	height: 400px
+	box-shadow: 0 5px 20px 0 rgba(0,0,0,.25)
+	figcaption 
+		padding: 8px 8px 15px
+		background-color: #FFF
+		h5 
+			color: #202326
+			font-family: "RobotoBold"
+			text-transform: uppercase
+			font-size: 1.3em
+		p 
+			font-family: "RobotoRegular"
+		button 
+			background-color: #e64c3c
+			width: 60%
+			height: 50px
+			outline: none
+			border: none
+			border-radius: 5px
+			font-family: "OpenSansBold"
+			text-transform: uppercase
+			color: #fafafa
+			font-size: 1.3em
+			border-bottom: 3px solid #bb4134
+			margin: 0 auto
+		span 
+			text-align: center
+			display: block
+			margin: 50px 0 0 0
+
+.pay__case-title
+	margin-bottom: 30px		

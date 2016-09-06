@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="stylesheet" href="css/fonts.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/newfont.css">
+	<link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.css">
+	<link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.skinFlat.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+	<main class="overpass">
+		<section class="main__page toursBg">
+			<h2 class="tours__center-title"><span class="tour__main-animated">#</span>Туры</h2>
+			<header class="main__header">
+			<div class="container clearfix">
+				<div class="logo">
+					<a href="#">
+						<img src="img/lighthouse.svg" alt="lighthouse">
+					</a>
+				</div>
+				<nav class="header__navigation">
+					<button class="hidden__menu">
+						<img src="img/menu.svg" alt="menu">
+					</button>
+					<ul>
+						<li class="nav__list">
+							<a href="index.html" class="nav__link">
+								главная
+							</a>
+						</li>
+						<li class="nav__list">
+							<a href="tours.html" class="nav__link">
+								туры
+							</a>
+						</li>
+						<li class="nav__list">
+							<a href="booking.html" class="nav__link">
+								бронирование 
+							</a>
+						</li>
+						<li class="nav__list">
+							<a href="contact.html" class="nav__link">
+								контакты
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="hidden__menu__wrap">
+				<ul>
+						<li class="nav__list">
+							<a href="index.html" class="nav__link">
+								главная
+							</a>
+						</li>
+						<li class="nav__list">
+							<a href="tours.html" class="nav__link">
+								туры
+							</a>
+						</li>
+						<li class="nav__list">
+							<a href="booking.html" class="nav__link">
+								бронирование 
+							</a>
+						</li>
+						<li class="nav__list">
+							<a href="contact.html" class="nav__link">
+								контакты
+							</a>
+						</li>
+					</ul>
+			</div>
+			</section>
+			</header><!-- /header -->
+			<section class="tours__wrapper">
+				<div class="tours__title-main">
+					<h3>Подберите тур для себя:</h3>
+				</div>
+			</section>
+			<section class="tours__form">
+				<form action="tours_submit" method="get" accept-charset="utf-8">
+					<div class="col-lg-3">
+						<label for="#" class="tours__from">
+							Вылет из:
+							<input type="text" readonly placeholder="Минск">
+						</label>
+					</div>		
+					<div class="col-lg-3">
+						<label for="#" class="tours__from">
+							Куда:
+							<select name="tour__select" class="tour__selection">
+								<option value="Будва">Будва</option>
+								<option value="Бар">Бар</option>
+								<option value="Котор">Котор</option>
+								<option value="Тиван">Тиван</option>
+								<option value="Бечиче">Бечиче</option>
+								<option value="Пераст">Пераст</option>
+							</select>
+						</label>
+					</div>
+					<div class="col-lg-3">
+						<label class="date__from-main">
+							Выезд:
+							<input type="date" min="2016-06-10" value="2016-06-10"/>
+						</label>
+					</div>	
+					<div class="col-lg-3">
+						<label class="date__from-main">
+							Отъезд:
+							<input type="date" min="2016-06-10" value="2016-06-10"/>
+						</label>
+					</div>
+					<div class="price__tour-main col-lg-12">
+						<h4>Фильтр по цене:</h4>
+						<input type="text" id="ValuePriceTour" name="value_price" value="" />
+					</div>
+				</form>
+			</section>
+			<section class="tours__selection-wrap">
+				<h5 class="title__for-selectWrap">
+					<button type="submit" class="hotTours">
+						<img src="img/fire-hand-drawn-flames-outlines.svg" alt="fire">
+						Горящие предложения
+					</button>
+					<button type="submit" class="economTours">
+						<img src="img/offer.svg" alt="percent">
+						Эконом туры
+					</button>
+
+				</h5>
+				<div class="figure__wrapper">
+					<div class="container">
+						<div class="col-lg-4 col-md-4 col-sm-6" data-toggle="modal" data-target="#myModal">
+							<figure class="main__tour-figure">
+								<div class="tourAbsoluteWrapper">
+									<img src="img/mainTour1.jpg" alt="tour">
+									<div class="main__tour-price">
+										700$
+									</div>
+									<div class="main__tour-deal">
+										-20%
+									</div>
+								</div>
+								<figcaption>
+									<h5>Туры в Ponta VV Nova 3* - BB, 7 ночей *</h5>
+									<p>Тур в Черногорию, Рафаиловичи. Вилла находится напротив виллы Таня, на первой береговой линии. На первом этаже ресепшн, собственный  ресторан Porat с большим садом в окружении зелени, пальм и цветов, выходящим на берег моря.</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6" data-toggle="modal" data-target="#myModal">
+							<figure class="main__tour-figure">
+								<div class="tourAbsoluteWrapper">
+									<img src="img/mainTour2.jpg" alt="tour">
+									<div class="main__tour-price">
+										899$*
+									</div>
+									<div class="main__tour-hot">
+										<img src="img/fire-hand-drawn-flames-outlines.svg" alt="fire">
+									</div>
+								</div>
+								<figcaption>
+									<h5>Туры в Ponta VV Nova 3* - BB, 7 ночей *</h5>
+									<p>Тур в Черногорию, Рафаиловичи. Вилла находится напротив виллы Таня, на первой береговой линии. На первом этаже ресепшн, собственный  ресторан Porat с большим садом в окружении зелени, пальм и цветов, выходящим на берег моря.</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6" data-toggle="modal" data-target="#myModal">
+							<figure class="main__tour-figure">
+								<div class="tourAbsoluteWrapper">
+									<img src="img/mainTour3.jpg" alt="tour">
+									<div class="main__tour-price">
+										1240$
+									</div>
+									
+								</div>
+								<figcaption>
+									<h5>Туры в Ponta VV Nova 3* - BB, 7 ночей *</h5>
+									<p>Тур в Черногорию, Рафаиловичи. Вилла находится напротив виллы Таня, на первой береговой линии. На первом этаже ресепшн, собственный  ресторан Porat с большим садом в окружении зелени, пальм и цветов, выходящим на берег моря.</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6" data-toggle="modal" data-target="#myModal">
+							<figure class="main__tour-figure">
+								<div class="tourAbsoluteWrapper">
+									<img src="img/mainTour4.jpg" alt="tour">
+									<div class="main__tour-price">
+										855$
+									</div>
+									<div class="main__tour-deal">
+										-35%
+									</div>
+								</div>
+								<figcaption>
+									<h5>Туры в Ponta VV Nova 3* - BB, 7 ночей *</h5>
+									<p>Тур в Черногорию, Рафаиловичи. Вилла находится напротив виллы Таня, на первой береговой линии. На первом этаже ресепшн, собственный  ресторан Porat с большим садом в окружении зелени, пальм и цветов, выходящим на берег моря.</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6" data-toggle="modal" data-target="#myModal">
+							<figure class="main__tour-figure"> 
+								<div class="tourAbsoluteWrapper">
+									<img src="img/mainTour5.jpg" alt="tour">
+									<div class="main__tour-price">
+										1050$*
+									</div>
+									<div class="main__tour-hot">
+										<img src="img/fire-hand-drawn-flames-outlines.svg" alt="fire">
+									</div>
+								</div>
+								<figcaption>
+									<h5>Туры в Ponta VV Nova 3* - BB, 7 ночей *</h5>
+									<p>Тур в Черногорию, Рафаиловичи. Вилла находится напротив виллы Таня, на первой береговой линии. На первом этаже ресепшн, собственный  ресторан Porat с большим садом в окружении зелени, пальм и цветов, выходящим на берег моря.</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6" data-toggle="modal" data-target="#myModal">
+							<figure class="main__tour-figure">
+								<div class="tourAbsoluteWrapper">
+									<img src="img/mainTour6.jpg" alt="tour">
+									<div class="main__tour-price">
+										1980$
+									</div>
+									
+								</div>
+								<figcaption>
+									<h5>Туры в Ponta VV Nova 3* - BB, 7 ночей *</h5>
+									<p>Тур в Черногорию, Рафаиловичи. Вилла находится напротив виллы Таня, на первой береговой линии. На первом этаже ресепшн, собственный  ресторан Porat с большим садом в окружении зелени, пальм и цветов, выходящим на берег моря.</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6" data-toggle="modal" data-target="#myModal">
+							<figure class="main__tour-figure">
+								<div class="tourAbsoluteWrapper">
+									<img src="img/mainTour7.jpg" alt="tour">
+									<div class="main__tour-price">
+										650$
+									</div>
+									
+								</div>
+								<figcaption>
+									<h5>Туры в Ponta VV Nova 3* - BB, 7 ночей *</h5>
+									<p>Тур в Черногорию, Рафаиловичи. Вилла находится напротив виллы Таня, на первой береговой линии. На первом этаже ресепшн, собственный  ресторан Porat с большим садом в окружении зелени, пальм и цветов, выходящим на берег моря.</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6" data-toggle="modal" data-target="#myModal">
+							<figure class="main__tour-figure">
+								<div class="tourAbsoluteWrapper">
+									<img src="img/mainTour8.jpg" alt="tour">
+									<div class="main__tour-price">
+										2400$
+									</div>
+									<div class="main__tour-hot">
+										<img src="img/fire-hand-drawn-flames-outlines.svg" alt="fire">
+									</div>
+								</div>
+								<figcaption>
+									<h5>Туры в Ponta VV Nova 3* - BB, 7 ночей *</h5>
+									<p>Тур в Черногорию, Рафаиловичи. Вилла находится напротив виллы Таня, на первой береговой линии. На первом этаже ресепшн, собственный  ресторан Porat с большим садом в окружении зелени, пальм и цветов, выходящим на берег моря.</p>
+								</figcaption>
+							</figure>
+						</div>
+						
+					</div>
+					
+				</div>
+			</section>
+			<footer class="tours__footer">
+				<button class="back__toMain">
+					Вернуться на главную
+				</button>
+			</footer>
+	</main>	
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal__title-tour">Название тура</h4>
+	        <div class="modal__mini-go">
+	        	Туры - <span>Название тура</span>
+	        </div>
+	      </div>
+	      <div class="modal-body">
+	        <div class="col-lg-4 col-md-4 col-sm-6 col-md-4 col-sm-6">
+	        	<img src="img/mainTour1.jpg" class="adaptive__img" alt="tour">
+	        </div>
+	        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+	        	<div class="tour__modal-section">
+	        		<strong>Количество звёзд:</strong>
+	        		<img src="img/favorite.svg" alt="Star" class="starModal">
+	        		<img src="img/favorite.svg" alt="Star" class="starModal">
+	        		<img src="img/favorite.svg" alt="Star" class="starModal">
+	        	</div>
+	        	<div class="tour__modal-section">
+	        		<strong>Выезд:</strong>
+	        		еженедельно (по субботам)
+	        	</div>
+	        	<div class="tour__modal-section">
+	        		<strong>Транспорт:</strong>
+	        		<img src="img/school-bus.svg" alt="bus" class="modal__transport">
+
+	        	</div>
+	        	<div class="tour__modal-section">
+	        		<strong>Количество дней:</strong>
+	        		16 дней (8 дней на море)
+	        	</div>
+	        	<div class="tour__modal-section">
+	        		<strong>Питание:</strong>
+	        		BB (завтраки)
+	        	</div>
+	        	<div class="tour__modal-section">
+	        		<strong>Вид тура:</strong>
+	        		Экскурсионный + отдых (тур для всех)
+	        	</div>
+	        </div>
+	        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+	        	<div class="modal__sub-wrapper">
+	        		<button type="submit" class="modal__submit">Заказать</button>
+	        	</div>
+	        	
+	        </div>
+	        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 modal__rating-main">
+	        	<img src="img/starr.svg" alt="rating">
+	        	<span class="modal__rating">65</span>
+	        </div>
+	      </div>
+	      
+	    </div>
+	  </div>
+	</div>
+	<!-- End Modal -->
+
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/ion.rangeSlider.min.js"></script>
+	<script>
+		$("#ValuePriceTour").ionRangeSlider({
+			type: "double",
+			min: 700,
+			max: 4500,
+			grid: true,
+			grid_num: 10
+		});
+	</script>
+	
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/common.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	
+</body>
+</html>
